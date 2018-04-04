@@ -1,0 +1,23 @@
+{% extends "main/base.html" %}
+
+{% block header %}
+  <head>
+    <title>{% block title %}The human side of AI{% endblock title %}</title>
+  </head>
+
+  <div class='jumbotron'>
+    <h1>New York Artificial Intelligence in Healthcare</h1>
+  </div>
+{% endblock header %}
+
+{% block content %}
+	<h2>
+	  We're a group dedicated to learning, understanding and developing AI applications in the med tech industry.
+	</h2>
+
+	<h2>
+	  <a href="{% url 'user_accounts:signup' %}">Register an account</a> to network and collaborate with others who are as enthusiatic about the advancements in artificial intelligence. 
+	</h2>
+
+
+{% endblock content %}

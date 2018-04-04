@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'bootstrap3',
 
     # Website apps:
+    'main',
     'user_accounts',
 ]
 

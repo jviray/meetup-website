@@ -1,0 +1,20 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+	<head>
+	  <title>Log in | N.Y.A.I.H.</title>
+	</head>
+	<body>
+	  {% if form.errors %}
+	  <p>Your username and password didn't match. Please try again.</p>
+	  {% endif %}
+
+	  <form method="post" action="{% url 'user_accounts:login' %}">
+	    {% csrf_token %}
+	    {{ form.as_p }}
+	    <button name="submit">Log in</button>
+	    <input type="hidden" name="next" value="{% url 'main:home' %}" />
+	  </form>
+
+	</body>
+{% endblock content %}
