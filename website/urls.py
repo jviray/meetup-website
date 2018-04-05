@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('main.urls', namespace='main')),
     url(r'users/', include('user_accounts.urls', namespace='user_accounts')),
+    url(r'collaborate/', include('project_board.urls', namespace='projects')),
 ]

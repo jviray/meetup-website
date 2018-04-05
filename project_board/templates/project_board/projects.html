@@ -1,0 +1,20 @@
+{% extends "main/base.html" %}
+
+{% block header %}
+  <head>
+    <title>{% block title %}Collaborate with other members | {% endblock title %}</title>
+  </head>
+
+  <h1>Projects</h1>
+{% endblock header %}
+
+{% block content %}
+  <ul>
+    {% for project in projects %}
+      <li>{{ project }}</li>
+    {% empty %}
+      <li>No projects have been added yet.</li>
+    {% endfor %}
+  </ul>
+
+{% endblock content %}

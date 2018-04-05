@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # Website apps:
     'main',
     'user_accounts',
+    'project_board',
 ]
 
 MIDDLEWARE = [
