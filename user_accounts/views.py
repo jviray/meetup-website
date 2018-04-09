@@ -28,3 +28,7 @@ def signup(request):
 
 	context = {'form': form}
 	return render(request, 'user_accounts/signup.html', context)
+
+def profile(request):
+	"""User's individual profile page."""
+	pass
